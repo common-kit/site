@@ -1,16 +1,17 @@
 <script lang="ts">
   import { CodeXml, Layers, Sparkle } from '@lucide/svelte';
-  import Kit from '$lib/Kit.svelte';
-  import ToolIcon from '$lib/ToolIcon.svelte';
-  import { tools } from '$lib/tools';
+  import Kit from '#lib/Kit.svelte';
+  import Seo from '#lib/Seo.svelte';
+  import ToolIcon from '#lib/ToolIcon.svelte';
+  import { tools } from '#lib/tools.ts';
 </script>
 
-<svelte:head>
-  <title>Common Kit · Open-source apps for small businesses</title>
-  <meta name="description" content="Common Kit is a collection of open-source small business apps for search, website analytics, contacts, and selling online." />
-  <meta property="og:title" content="Common Kit · Open-source apps for small businesses" />
-  <meta property="og:description" content="Open-source tools to get found, understand your website, keep up with customers, and sell online." />
-</svelte:head>
+<Seo
+  title="Common Kit · Open-source apps for small businesses"
+  description="Common Kit is a collection of open-source small business apps for search, website analytics, contacts, and selling online."
+  path="/"
+  shareDescription="Open-source tools to get found, understand your website, keep up with customers, and sell online."
+/>
 
 <main id="main">
   <section class="hero wrap" aria-labelledby="hero-title">

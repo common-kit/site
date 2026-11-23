@@ -1,8 +1,9 @@
 <script lang="ts">
   import { Check } from '@lucide/svelte';
-  import Kit from '$lib/Kit.svelte';
-  import ToolIcon from '$lib/ToolIcon.svelte';
-  import { toolGroups, tools } from '$lib/tools';
+  import Kit from '#lib/Kit.svelte';
+  import Seo from '#lib/Seo.svelte';
+  import ToolIcon from '#lib/ToolIcon.svelte';
+  import { toolGroups, tools } from '#lib/tools.ts';
 
   const groups = toolGroups.map((group) => ({
     ...group,
@@ -10,12 +11,13 @@
   }));
 </script>
 
-<svelte:head>
-  <title>Open-source apps for small businesses · Common Kit</title>
-  <meta name="description" content="Explore nine open-source apps in development for small businesses. See what each app is designed to do and which tools it could replace." />
-  <meta property="og:title" content="Explore the Common Kit apps" />
-  <meta property="og:description" content="Open-source alternatives for SEO, analytics, forms, CRM, email, booking, estimates, inventory, and online stores." />
-</svelte:head>
+<Seo
+  title="Open-source apps for small businesses · Common Kit"
+  description="Explore nine open-source apps in development for small businesses. See what each app is designed to do and which tools it could replace."
+  path="/apps/"
+  shareTitle="Explore the Common Kit apps"
+  shareDescription="Open-source alternatives for SEO, analytics, forms, CRM, email, booking, estimates, inventory, and online stores."
+/>
 
 <main id="main">
   <section class="catalog-hero wrap" aria-labelledby="catalog-title">
@@ -104,6 +106,7 @@
     border: 1px solid #ecd3b6;
     border-radius: 47% 47% 1.35rem 1.35rem;
     padding: .9rem 1.25rem .45rem;
+    overflow: hidden;
     isolation: isolate;
   }
 

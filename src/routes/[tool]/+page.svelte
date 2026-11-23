@@ -1,15 +1,13 @@
 <script lang="ts">
-  import Kit from '$lib/Kit.svelte';
-  import ToolIcon from '$lib/ToolIcon.svelte';
+  import Kit from '#lib/Kit.svelte';
+  import Seo from '#lib/Seo.svelte';
+  import ToolIcon from '#lib/ToolIcon.svelte';
   import type { PageProps } from './$types';
 
   let { data }: PageProps = $props();
 </script>
 
-<svelte:head>
-  <title>{data.tool.name} · Common Kit</title>
-  <meta name="description" content={data.tool.description} />
-</svelte:head>
+<Seo title={`${data.tool.name} · Common Kit`} description={data.tool.description} path={`/${data.tool.slug}/`} />
 
 <main id="main">
   <section class="wrap detail-hero">

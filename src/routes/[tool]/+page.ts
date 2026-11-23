@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { tools } from '$lib/tools';
+import { tools } from '#lib/tools.ts';
 import type { EntryGenerator, PageLoad } from './$types';
 
 export const entries: EntryGenerator = () => tools.map(({ slug }) => ({ tool: slug }));

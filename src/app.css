@@ -97,7 +97,7 @@ nav a:hover, .back-link:hover { text-decoration: underline; text-underline-offse
   transition: box-shadow .18s ease, transform .18s ease;
 }
 .button:hover { transform: translate(-2px, -2px); box-shadow: 5px 6px 0 #e5a479; }
-.hero-art { position: relative; display: grid; place-items: center; min-width: 0; isolation: isolate; }
+.hero-art { position: relative; display: grid; place-items: center; min-width: 0; isolation: isolate; background: var(--page); }
 .hero-backdrop {
   position: absolute;
   inset: 8% 9% 7% 10%;

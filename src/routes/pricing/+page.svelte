@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Bot, Check, CreditCard, Gauge, ReceiptText, Users } from '@lucide/svelte';
   import Kit from '#lib/Kit.svelte';
+  import SavingsCalculator from '#lib/SavingsCalculator.svelte';
   import Seo from '#lib/Seo.svelte';
   import { pricing, type Billing } from '#lib/pricing.ts';
 
@@ -126,6 +127,12 @@
       </div>
       <p class="trial-line">Every hosted plan starts with a {trialDays}-day free trial. No card needed.</p>
     </div>
+  </section>
+
+  <section class="wrap savings" aria-labelledby="savings-title">
+    <h2 id="savings-title">What you’d pay for the big names</h2>
+    <p class="section-intro">Pick the tools you pay for today and how many people use them. Most charge for each person; we don’t.</p>
+    <SavingsCalculator />
   </section>
 
   <section class="wrap examples" aria-labelledby="examples-title">
@@ -285,8 +292,9 @@
 
   .trial-line { margin-top: 1.3rem; color: var(--ink); font-weight: 700; }
 
+  .savings { padding-block: 3.2rem 0; }
   .examples { padding-block: 3.2rem; }
-  .examples h2, .included-section h2, .faq h2 { font-size: clamp(2.1rem, 4vw, 3rem); }
+  .savings h2, .examples h2, .included-section h2, .faq h2 { font-size: clamp(2.1rem, 4vw, 3rem); }
   .section-intro { margin-top: .5rem; font-size: 1.05rem; }
   .examples ul { list-style: none; padding: 0; margin: 1.3rem 0 0; border-top: 1px solid var(--line); }
 

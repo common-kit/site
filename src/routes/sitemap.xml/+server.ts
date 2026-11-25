@@ -7,7 +7,7 @@ export const prerender = true;
 export const GET: RequestHandler = () => {
   if (!siteOrigin) return new Response(null, { status: 204 });
 
-  const paths = ['/', '/apps/', ...tools.map(({ slug }) => `/${slug}/`)];
+  const paths = ['/', '/apps/', '/pricing/', ...tools.map(({ slug }) => `/${slug}/`)];
   const urls = paths.map((path) => `  <url><loc>${new URL(path, siteOrigin).href}</loc></url>`);
 
   return new Response(

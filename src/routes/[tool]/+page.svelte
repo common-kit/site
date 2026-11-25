@@ -2,6 +2,7 @@
   import Kit from '#lib/Kit.svelte';
   import Seo from '#lib/Seo.svelte';
   import ToolIcon from '#lib/ToolIcon.svelte';
+  import { pricing } from '#lib/pricing.ts';
   import type { PageProps } from './$types';
 
   let { data }: PageProps = $props();
@@ -39,6 +40,19 @@
         <p>{data.tool.alternatives.join(", ")}. {data.tool.comparison}</p>
       </div>
     </div>
+  </section>
+
+  <section class="wrap app-pricing" aria-labelledby="pricing-title">
+    <div class="app-pricing-heading">
+      <h2 id="pricing-title">What it costs</h2>
+      <p>Planned prices for when it’s ready, per business.</p>
+    </div>
+    <ul class="app-price-options">
+      <li><strong>${pricing.oneApp.monthly}</strong><span>a month for {data.tool.name} on its own</span></li>
+      <li><strong>${pricing.everything.monthly}</strong><span>a month with every app included</span></li>
+      <li><strong>$0</strong><span>to run it yourself, open source</span></li>
+    </ul>
+    <a class="catalog-link" href="/pricing/">See how pricing works</a>
   </section>
 
   <section class="wrap related" aria-labelledby="related-title">

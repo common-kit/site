@@ -18,6 +18,7 @@
     </a>
     <nav aria-label="Main navigation">
       <a href="/apps/" aria-current={page.url.pathname === '/apps/' ? 'page' : undefined}>The apps</a>
+      <a href="/pricing/" aria-current={page.url.pathname === '/pricing/' ? 'page' : undefined}>Pricing</a>
       <a href="/#approach">Why Common Kit</a>
     </nav>
   </div>
@@ -33,6 +34,7 @@
     </a>
     <nav aria-label="Footer navigation">
       <a href="/apps/" aria-current={page.url.pathname === '/apps/' ? 'page' : undefined}>The apps</a>
+      <a href="/pricing/" aria-current={page.url.pathname === '/pricing/' ? 'page' : undefined}>Pricing</a>
       <a href="/#approach">Why Common Kit</a>
     </nav>
   </div>

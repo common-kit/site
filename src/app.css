@@ -264,3 +264,12 @@ nav a:hover, .back-link:hover { text-decoration: underline; text-underline-offse
 }
 
 .detail-comparison p { margin-top: .6rem; }
+
+.app-pricing { padding-block: 3rem 0; }
+.app-pricing-heading h2 { font-size: clamp(2.15rem, 4vw, 3rem); }
+.app-pricing-heading p { margin-top: .4rem; }
+.app-price-options { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.app-price-options li { display: grid; gap: .3rem; padding: 1.15rem; border: 1px solid var(--line); border-radius: .65rem; background: #fffcf6; }
+.app-price-options strong { font-family: var(--display); font-size: 2.4rem; letter-spacing: -.06em; line-height: 1; color: var(--ink); }
+.app-price-options span { color: var(--muted); }
+@media (max-width: 44rem) { .app-price-options { grid-template-columns: 1fr; } }

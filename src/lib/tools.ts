@@ -6,17 +6,19 @@ export const toolGroups = [
 
 export const tools = [
   {
-    slug: 'seo',
-    name: 'Common SEO',
+    slug: 'growth',
+    name: 'Common Growth',
     group: 'get-found',
     color: 'peach',
-    summary: 'Find the broken links, missing page titles, and other issues that can make your site hard to find.',
-    description: 'A practical SEO toolkit for the person who runs the website and the business behind it.',
-    alternatives: ['Screaming Frog SEO Spider', 'Ahrefs Site Audit'],
-    comparison: 'For routine website audits and a prioritized list of fixes.',
+    summary: 'See how your business is doing, why it changed, and the few things to do next to grow.',
+    description: 'One place to see how people find your business, with a short list of what to do next and a check on whether it worked.',
+    alternatives: ['Semrush', 'Ahrefs', 'Triple Whale'],
+    comparison: 'For knowing what to work on next, ranked by what it’s worth to your business.',
     plans: [
-      { title: 'Spot what needs fixing', text: 'Find broken links, missing page titles, and other issues that can make your site harder to find.' },
-      { title: 'Know where to start', text: 'Get a short list of fixes in plain English, with enough context to tackle them yourself.' }
+      { title: 'See it all in one place', text: 'Search, AI answers like ChatGPT, website visits, ads, and sales together, in plain English.' },
+      { title: 'Get the 10 things to do now', text: 'A ranked list, each with why it matters, what it could earn, and how much work it is.' },
+      { title: 'Hand off the work', text: 'Each item comes as a brief that you, a helper, or your own AI assistant can carry out, on any website.' },
+      { title: 'See what it earned', text: 'Once a change is live, find out what it moved, so the next list is even better.' }
     ]
   },
   {

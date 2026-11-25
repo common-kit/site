@@ -28,7 +28,7 @@ export type Competitor = {
 };
 
 export const competitors: Competitor[] = [
-  { app: 'seo', category: 'Search and SEO', product: 'Semrush', plan: 'Pro', monthly: 139.95, perPerson: false, source: 'https://www.semrush.com/pricing/seo/' },
+  { app: 'growth', category: 'Search and SEO', product: 'Semrush', plan: 'Pro', monthly: 139.95, perPerson: false, source: 'https://www.semrush.com/pricing/seo/' },
   { app: 'contacts', category: 'Customer list (CRM)', product: 'HubSpot', plan: 'Starter', monthly: 20, perPerson: true, source: 'https://www.hubspot.com/pricing/crm', note: 'HubSpot is discounting Starter for new customers, to $10 a month per person on monthly billing.' },
   { app: 'storefront', category: 'Online store', product: 'Shopify', plan: 'Basic', monthly: 39, perPerson: false, source: 'https://www.shopify.com/pricing' },
   { app: 'forms', category: 'Forms', product: 'Typeform', plan: 'Basic', monthly: 39, perPerson: false, source: 'https://www.typeform.com/pricing/' },

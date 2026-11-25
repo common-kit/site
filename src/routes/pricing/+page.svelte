@@ -11,7 +11,7 @@
   const per = $derived(billing === 'monthly' ? 'a month' : 'a year');
 
   const examples = [
-    { who: 'A bakery that only needs Common SEO', math: 'One app', total: oneApp.monthly },
+    { who: 'A bakery that only needs Common Growth', math: 'One app', total: oneApp.monthly },
     { who: 'The same bakery, adding Common Contacts', math: `Two apps would be $${oneApp.monthly * 2}, so it’s Everything`, total: everything.monthly },
     {
       who: 'An agency with eight client businesses, three of them on every app',

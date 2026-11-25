@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { CalendarDays, ChartNoAxesColumnIncreasing, ClipboardList, ContactRound, FileText, Inbox, Package, Search, Store } from '@lucide/svelte';
+  import { CalendarDays, ChartNoAxesColumnIncreasing, ClipboardList, ContactRound, FileText, Inbox, Package, Store, TrendingUp } from '@lucide/svelte';
   import type { Tool } from './tools';
 
   let { slug, size = 27 }: { slug: Tool['slug']; size?: number } = $props();
   const icons = {
-    seo: Search,
+    growth: TrendingUp,
     analytics: ChartNoAxesColumnIncreasing,
     contacts: ContactRound,
     storefront: Store,

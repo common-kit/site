@@ -51,7 +51,7 @@
   List prices on monthly billing, checked {comparisonChecked}, for the plan a small business usually starts on.
   Prices from each product’s pricing page:
   {#each competitors as c, i (c.app)}<a href={c.source} rel="noopener">{c.product}</a>{i < competitors.length - 1 ? ', ' : '.'}{/each}
-  Our apps are in development and don’t do everything these products do. Google Analytics is free, so it isn’t counted.
+  {#each competitors.filter((c) => c.note) as c (c.app)}{c.note}{' '}{/each}Our apps are in development and don’t do everything these products do. Google Analytics is free, so it isn’t counted.
 </p>
 
 <style>

@@ -11,7 +11,8 @@ export const pricing = {
 export type Billing = 'monthly' | 'yearly';
 
 // The leading paid tool in each category, at the plan a small business would usually start on.
-// List prices on monthly billing in US dollars, checked November 2026. Update `comparisonChecked` when you recheck them.
+// List prices on monthly billing in US dollars, checked on each product's own pricing page on
+// 25 November 2026. Update `comparisonChecked` when you recheck them.
 export const comparisonChecked = 'November 2026';
 
 export type Competitor = {
@@ -22,11 +23,13 @@ export type Competitor = {
   monthly: number;
   perPerson: boolean;
   source: string;
+  /** A discount or other caveat the comparison should mention. */
+  note?: string;
 };
 
 export const competitors: Competitor[] = [
-  { app: 'seo', category: 'Search and SEO', product: 'Semrush', plan: 'Pro', monthly: 139.95, perPerson: false, source: 'https://www.semrush.com/pricing/seo-ai-search/' },
-  { app: 'contacts', category: 'Customer list (CRM)', product: 'HubSpot', plan: 'Starter', monthly: 20, perPerson: true, source: 'https://www.hubspot.com/pricing/crm' },
+  { app: 'seo', category: 'Search and SEO', product: 'Semrush', plan: 'Pro', monthly: 139.95, perPerson: false, source: 'https://www.semrush.com/pricing/seo/' },
+  { app: 'contacts', category: 'Customer list (CRM)', product: 'HubSpot', plan: 'Starter', monthly: 20, perPerson: true, source: 'https://www.hubspot.com/pricing/crm', note: 'HubSpot is discounting Starter for new customers, to $10 a month per person on monthly billing.' },
   { app: 'storefront', category: 'Online store', product: 'Shopify', plan: 'Basic', monthly: 39, perPerson: false, source: 'https://www.shopify.com/pricing' },
   { app: 'forms', category: 'Forms', product: 'Typeform', plan: 'Basic', monthly: 39, perPerson: false, source: 'https://www.typeform.com/pricing/' },
   { app: 'inbox', category: 'Shared inbox', product: 'Help Scout', plan: 'Standard', monthly: 30, perPerson: true, source: 'https://www.helpscout.com/pricing/' },

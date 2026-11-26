@@ -42,6 +42,22 @@
     </div>
   </section>
 
+  {#if 'screens' in data.tool}
+    <section class="wrap detail-screens" aria-labelledby="screens-title">
+      <h2 id="screens-title">See it</h2>
+      <p>Screens from the app, with an example shop.</p>
+      <div class="screen-list">
+        {#each data.tool.screens as screen (screen.src)}
+          <figure>
+            <!-- Small on a phone: a tap opens the full-size screen. -->
+            <a href={screen.src}><img src={screen.src} alt={screen.alt} width="1800" height="1125" loading="lazy" decoding="async" /></a>
+            <figcaption>{screen.caption}</figcaption>
+          </figure>
+        {/each}
+      </div>
+    </section>
+  {/if}
+
   <section class="wrap app-pricing" aria-labelledby="pricing-title">
     <div class="app-pricing-heading">
       <h2 id="pricing-title">What it costs</h2>

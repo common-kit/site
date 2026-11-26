@@ -197,6 +197,12 @@ nav a:hover, .back-link:hover { text-decoration: underline; text-underline-offse
 .plan-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.25rem; }
 .plan-grid article { background: var(--page); border: 1px solid var(--line); border-radius: .65rem; padding: 1.25rem; }
 .plan-grid article p { margin-top: .6rem; }
+.detail-screens { padding-block: 2.8rem 1rem; }
+.detail-screens > p { margin-top: .4rem; color: var(--muted, inherit); }
+.screen-list { display: grid; gap: 2rem; margin-top: 1.5rem; }
+.screen-list figure { margin: 0; }
+.screen-list img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: .65rem; box-shadow: 0 1px 2px rgb(0 0 0 / .04), 0 8px 24px rgb(0 0 0 / .06); }
+.screen-list figcaption { margin-top: .7rem; }
 .related { padding-block: 3rem 3.75rem; }
 .related h2 { font-size: clamp(2.15rem, 4vw, 3rem); }
 .related ul { padding: 0; margin: 1.15rem 0 0; list-style: none; display: flex; flex-wrap: wrap; gap: .9rem 1.6rem; }

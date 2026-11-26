@@ -19,6 +19,12 @@ export const tools = [
       { title: 'Get the 10 things to do now', text: 'A ranked list, each with why it matters, what it could earn, and how much work it is.' },
       { title: 'Hand off the work', text: 'Each item comes as a brief that you, a helper, or your own AI assistant can carry out, on any website.' },
       { title: 'See what it earned', text: 'Once a change is live, find out what it moved, so the next list is even better.' }
+    ],
+    // Screens from the app, showing an invented sample shop (Fernwick Coffee), never a real business.
+    screens: [
+      { src: '/screens/growth-projects.webp', alt: 'Common Growth’s Projects page: a ranked list of seven things to do, each with its impact, estimate and effort', caption: 'The things to do now, ranked by what each could bring in and how much work it is.' },
+      { src: '/screens/growth-project.webp', alt: 'One project in Common Growth: why it’s worth doing, the estimate, and a brief with steps to hand off', caption: 'Each one comes with the evidence and a brief you can hand to a helper or your own AI assistant.' },
+      { src: '/screens/growth-ai-answers.webp', alt: 'Common Growth’s AI answers page: how often ChatGPT, Gemini, Perplexity and Google’s AI Overviews mention the shop', caption: 'Whether ChatGPT, Gemini and others recommend you, and who they name instead.' }
     ]
   },
   {
